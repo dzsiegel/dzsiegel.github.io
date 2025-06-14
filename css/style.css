@@ -1,6 +1,7 @@
 body {
     height: auto;
     background-color: #f4f3f3;
+    
 }
 
 .loader {
@@ -97,30 +98,70 @@ li a:active {
 }
 
 #works {
-    padding-top: 150px;
-    width: 100%;
-}
-
-#works hr {
-    clear: both;
-    border: 0;
-    display: block;
-    width: 95%;
-    background-color: darkgray;
-    height: .5px;
+  display: flex;
+  padding-top: 150px;
+  width: 100%;
 }
 
 .workssection {
-    width: 33.33%;
+  display: flex;
+  padding-bottom: 50px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 33%;
+  padding-bottom: px;
+  max-height: 450px;
+  overflow-y: hidden;
+  align-content: start;
+}
+
+.item p1, .item p2, .item p3, .item img {
+  display: flex;
+}
+/**
+#works {
+    padding-top: 150px;
+    display: flex;
+    margin: auto;
+    height: 100%;
+  
+}
+
+.item {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  padding: 1%;
+  margin-bottom: 2.5%;
+  height: 40vh;
+  overflow-y: hidden;
+  align-items: flex-start;
+}
+
+
+.workssection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     float: left;
     padding-bottom: 50px;
     padding-left: 3%;
     padding-right:3%;
-    overflow: hidden;
-    border-left-style: solid;
-    border-left-width: .5px;
-    border-left-color: darkgray;
+
+    
 }
+**/
+.item p3, .item p1 {
+  width: 100%;
+}
+
+
 
 .workssection p3 a:link, a:visited, a:active { 
     color: #4A0002;
@@ -160,9 +201,11 @@ li a:active {
     text-decoration: underline;
 }
 
+
 p3 a {
     text-decoration: none;
     color: #4A0002;
+    
 }
 
 p3 a:hover {
@@ -411,7 +454,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
 /*formobile - don't touch anything below this code*/  
     
     #nav {
@@ -465,9 +508,9 @@ footer {
     letter-spacing: 1.75px;
     }
     
-    .workssection {
+    #works {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 230px;
     padding-bottom: 50px;
     padding-left: 3%;
     padding-right: 3%;
@@ -476,6 +519,30 @@ footer {
     border-left-width: .5px;
     border-left-color: darkgray;
     }
+  
+  .workssection{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
+    overflow: hidden;
+  }
+  
+    .item {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 45px;
+    margin: 0 auto;
+    }
+  
+  .item img {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+ 
     
     #about {
     padding-top: 250px;
