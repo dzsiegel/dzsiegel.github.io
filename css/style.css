@@ -108,6 +108,8 @@ li a:active {
   padding-bottom: 50px;
   padding-left: 3%;
   padding-right: 3%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .item {
@@ -122,6 +124,14 @@ li a:active {
 
 .item p1, .item p2, .item p3, .item img {
   display: flex;
+}
+
+h1, h2 {
+    font-family: Baskerville;
+}
+
+h2 a {
+    color: black;
 }
 /**
 #works {
@@ -173,11 +183,13 @@ li a:active {
     color: black;
 }
 
+
 .workssection a:hover {
     color: #4A0002;
     text-decoration: none;
     opacity: .85;
 }
+
 
 .workssection p1 {
     font-family: 'Baskerville';
@@ -187,9 +199,9 @@ li a:active {
 
 .workssection p2 {
     font-family: 'Montserrat';
-    font-size: 8pt;
+    font-size: 12pt;
     color: #4A0002;
-    font-weight: 100;
+    font-weight: 150;
 }
 
 .workssection p3 {
