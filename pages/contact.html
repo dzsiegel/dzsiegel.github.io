@@ -5,7 +5,6 @@
     <link rel="icon" href="../images/favicon.png" type="image/gif" sizes="16x16">
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
@@ -19,13 +18,8 @@
     <script>
     new WOW().init();
     </script>
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
-$(window).load(function() {
+$(window).on('load', function() {
 	$(".loader").fadeOut("fast");
 })
     </script>
@@ -42,7 +36,7 @@ $(window).load(function() {
     
         <div class="navtitlemobile">
         <div class="wow fadeIn">
-            <center><a href="../index.html"><img src="../images/logo-smallmobile.png" width="225px"></a></center>
+            <a href="../index.html"><img src="../images/logo-smallmobile.png" width="225px"></a>
         </div>
     </div>
     <ul>
@@ -55,18 +49,18 @@ $(window).load(function() {
 </div>
 
 <div id="contact" class="wow fadeInUp" data-wow-duration="2s">
-    <div class="contact1"><p1>Contact</p1><br>
-        <div class="contact1-2"><iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ5XCAOkTY54kR7WSyWcZUo_Y&key=AIzaSyAJnwIL1xNYQ9mig2DNUm29gdF-pMEnuIQ" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen class="map"></iframe></div>
+    <div class="contact1"><h2 class="section-heading">Contact</h2><br>
+        <div class="contact1-2"><iframe src="https://maps.google.com/maps?q=Connecticut&output=embed" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen class="map"></iframe></div>
         <div class="contact1-3">
-            <p2><b>ADDRESS</b><br>THE FRACTURED MONOLITH</p2>
-            <p3><br>Connecticut</p3>
+            <p class="contact-label"><b>ADDRESS</b><br>THE FRACTURED MONOLITH</p>
+            <p class="contact-detail"><br>Connecticut</p>
         </div>
     </div>
     
     <div class="contact2">
         <div class="contact2-1">
-            <p1>ANYTHING</p1><br>
-            <p2><a href="mailto:dzsiegel@gmail.com" class="hvr-underline-from-left">dzsiegel@gmail.com</a></p2>
+            <h3 class="contact-heading">ANYTHING</h3><br>
+            <p class="contact-label"><a href="mailto:dzsiegel@gmail.com" class="hvr-underline-from-left">dzsiegel@gmail.com</a></p>
         </div>
         <div class="contact2-2">
         </div>
@@ -76,7 +70,7 @@ $(window).load(function() {
     
 </div>
 
-    <footer><center>&copy; 2025 THE FRACTURED MONOLITH | All Rights Reserved.</center></footer>
+    <footer>&copy; 2025 THE FRACTURED MONOLITH | All Rights Reserved.</footer>
     
 
 </body>
